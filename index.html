@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KUA Samarinda Utara</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+        }
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/16cc7e3f-44cf-4df6-a2ca-a9468c72c15a.png') center/cover no-repeat;
+            height: 80vh;
+        }
+        .feature-card:hover {
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+        }
+        .navbar {
+            backdrop-filter: blur(10px);
+        }
+        .floating-whatsapp {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            z-index: 100;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar bg-white shadow-md fixed w-full z-50">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <img src="Logo-KUA-768x731.jpeg" alt="Logo KUA Samarinda Utara dengan lambang resmi Kementerian Agama" class="h-16">
+                    <div class="ml-4">
+                        <h1 class="text-xl font-bold text-gray-800">KUA Samarinda Utara</h1>
+                        <p class="text-sm text-gray-600">Kementerian Agama Kota Samarinda</p>
+                    </div>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-800 hover:text-blue-600 font-medium">Beranda</a>
+                    <a href="#services" class="text-gray-800 hover:text-blue-600 font-medium">Layanan</a>
+                    <a href="#process" class="text-gray-800 hover:text-blue-600 font-medium">Proses</a>
+                    <a href="#fees" class="text-gray-800 hover:text-blue-600 font-medium">Biaya</a>
+                    <a href="#contact" class="text-gray-800 hover:text-blue-600 font-medium">Kontak</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-800 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section flex items-center justify-center text-white relative">
+        <div class="container mx-auto px-6 text-center z-10">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Pelayanan Nikah Samarinda Utara</h1>
+            <p class="text-xl md:text-2xl mb-8">"Melayani Dengan Hati, Membangun Keluarga Sakinah"</p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="#services" class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition duration-300">Layanan Kami</a>
+                <a href="#contact" class="bg-transparent border-2 border-white hover:bg-white hover:text-blue-600 text-white font-medium py-3 px-6 rounded-lg transition duration-300">Hubungi Kami</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Layanan KUA Samarinda Utara</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Daftar Nikah -->
+                <div class="feature-card bg-white p-6 rounded-xl shadow-lg border border-gray-200">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="far fa-heart"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Pendaftaran Nikah</h3>
+                    <p class="text-gray-600 mb-4">Pelayanan pendaftaran pernikahan dengan proses mudah dan cepat sesuai syariat Islam.</p>
+                    <a href="#" class="text-blue-600 font-medium hover:underline flex items-center">Selengkapnya <i class="fas fa-arrow-right ml-2"></i></a>
+                </div>
+
+                <!-- Rekomendasi Pindah Nikah -->
+                <div class="feature-card bg-white p-6 rounded-xl shadow-lg border border-gray-200">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-exchange-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Rekomendasi Pindah Nikah</h3>
+                    <p class="text-gray-600 mb-4">Pelayanan permohonan rekomendasi perpindahan administrasi perkawinan antar KUA.</p>
+                    <a href="#" class="text-blue-600 font-medium hover:underline flex items-center">Selengkapnya <i class="fas fa-arrow-right ml-2"></i></a>
+                </div>
+
+                <!-- Syarat Taukil Wali -->
+                <div class="feature-card bg-white p-6 rounded-xl shadow-lg border border-gray-200">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Taukil Wali</h3>
+                    <p class="text-gray-600 mb-4">Pelayanan penetapan dan pengesahan perwakilan wali nikah dengan proses yang syar'i.</p>
+                    <a href="#" class="text-blue-600 font-medium hover:underline flex items-center">Selengkapnya <i class="fas fa-arrow-right ml-2"></i></a>
+                </div>
+
+                <!-- Ikrar Wakaf -->
+                <div class="feature-card bg-white p-6 rounded-xl shadow-lg border border-gray-200">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-hand-holding-water"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Ikrar Wakaf</h3>
+                    <p class="text-gray-600 mb-4">Pelayanan pencatatan ikrar wakaf untuk kemaslahatan umat sesuai ketentuan syariah.</p>
+                    <a href="#" class="text-blue-600 font-medium hover:underline flex items-center">Selengkapnya <i class="fas fa-arrow-right ml-2"></i></a>
+                </div>
+
+                <!-- Rujuk -->
+                <div class="feature-card bg-white p-6 rounded-xl shadow-lg border border-gray-200">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Pendaftaran Rujuk</h3>
+                    <p class="text-gray-600 mb-4">Pelayanan pendaftaran rujuk bagi pasangan yang ingin kembali setelah cerai.</p>
+                    <a href="#" class="text-blue-600 font-medium hover:underline flex items-center">Selengkapnya <i class="fas fa-arrow-right ml-2"></i></a>
+                </div>
+
+                <!-- Konsultasi -->
+                <div class="feature-card bg-white p-6 rounded-xl shadow-lg border border-gray-200">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Konsultasi Nikah</h3>
+                    <p class="text-gray-600 mb-4">Layanan konsultasi pranikah dan keluarga sakinah oleh konselor berpengalaman.</p>
+                    <a href="#" class="text-blue-600 font-medium hover:underline flex items-center">Selengkapnya <i class="fas fa-arrow-right ml-2"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Alur Proses Pernikahan</h2>
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="w-full md:w-1/2 mb-8 md:mb-0">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/8cbe3a8b-ce53-4b31-b582-b404a54bcbfe.png" alt="Diagram alur proses pernikahan di KUA Samarinda Utara dengan langkah-langkah jelas" class="rounded-lg shadow-lg">
+                </div>
+                <div class="w-full md:w-1/2">
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-blue-600 text-white rounded-full h-10 w-10 flex items-center justify-center mr-4 flex-shrink-0">1</div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">Pemeriksaan Berkas</h4>
+                                <p class="text-gray-600">Calon mempelai mengajukan berkas persyaratan untuk diperiksa kelengkapannya.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-blue-600 text-white rounded-full h-10 w-10 flex items-center justify-center mr-4 flex-shrink-0">2</div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">Wawancara & Bimbingan</h4>
+                                <p class="text-gray-600">Calon pasangan akan menerima bimbingan dan wawancara oleh penyuluh.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-blue-600 text-white rounded-full h-10 w-10 flex items-center justify-center mr-4 flex-shrink-0">3</div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">Pencatatan Nikah</h4>
+                                <p class="text-gray-600">Proses pencatatan pernikahan di buku induk dan sistem Kemenag.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-blue-600 text-white rounded-full h-10 w-10 flex items-center justify-center mr-4 flex-shrink-0">4</div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">Akad Nikah</h4>
+                                <p class="text-gray-600">Pelaksanaan akad nikah sesuai dengan ketentuan syariat Islam.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-blue-600 text-white rounded-full h-10 w-10 flex items-center justify-center mr-4 flex-shrink-0">5</div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">Penerbitan Buku Nikah</h4>
+                                <p class="text-gray-600">Pencetakan dan penyerahan buku nikah resmi dari Kementerian Agama.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fees Section -->
+    <section id="fees" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Biaya Pelayanan</h2>
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white rounded-lg overflow-hidden">
+                    <thead class="bg-blue-600 text-white">
+                        <tr>
+                            <th class="py-3 px-4 text-left">Jenis Layanan</th>
+                            <th class="py-3 px-4 text-left">Biaya</th>
+                            <th class="py-3 px-4 text-left">Keterangan</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr>
+                            <td class="py-4 px-4">Pendaftaran Nikah</td>
+                            <td class="py-4 px-4">Rp 50.000</td>
+                            <td class="py-4 px-4">Biaya administrasi pencatatan nikah</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="py-4 px-4">Rekomendasi Pindah Nikah</td>
+                            <td class="py-4 px-4">Rp 25.000</td>
+                            <td class="py-4 px-4">Biaya rekomendasi perpindahan administrasi</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-4">Taukil Wali</td>
+                            <td class="py-4 px-4">Rp 100.000</td>
+                            <td class="py-4 px-4">Pengurusan perwakilan wali nikah</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="py-4 px-4">Ikrar Wakaf</td>
+                            <td class="py-4 px-4">Rp 150.000</td>
+                            <td class="py-4 px-4">Pencatatan ikrar wakaf</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-4">Pendaftaran Rujuk</td>
+                            <td class="py-4 px-4">Rp 50.000</td>
+                            <td class="py-4 px-4">Biaya administrasi rujuk</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="py-4 px-4">Pencetakan Ulang Buku Nikah</td>
+                            <td class="py-4 px-4">Rp 50.000</td>
+                            <td class="py-4 px-4">Biaya administrasi cetak ulang</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-4">Legalisasi Dokumen Nikah</td>
+                            <td class="py-4 px-4">Rp 10.000</td>
+                            <td class="py-4 px-4">Per lembar</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="mt-8 bg-yellow-50 border border-yellow-200 rounded-lg p-4">
+                <div class="flex items-start">
+                    <div class="text-yellow-600 mr-3 mt-1">
+                        <i class="fas fa-info-circle"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-yellow-800">Informasi Penting</h4>
+                        <p class="text-yellow-700">Biaya-biaya tersebut dapat berubah sesuai dengan peraturan yang berlaku. Silahkan konfirmasi ke petugas kami untuk informasi biaya terbaru.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Hubungi Kami</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Kantor KUA Samarinda Utara</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-blue-600 mt-1 mr-3"></i>
+                            <p class="text-gray-700">Jl. Pahlawan No. 123, Samarinda Utara, Kalimantan Timur</p>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone-alt text-blue-600 mt-1 mr-3"></i>
+                            <p class="text-gray-700">0541-1234567</p>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope text-blue-600 mt-1 mr-3"></i>
+                            <p class="text-gray-700">kua.samarindautara@kemenag.go.id</p>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-clock text-blue-600 mt-1 mr-3"></i>
+                            <p class="text-gray-700">Senin - Kamis: 08.00 - 15.00 WITA<br>Jumat: 08.00 - 11.30 WITA</p>
+                        </li>
+                    </ul>
+                    <div class="mt-6">
+                        <h4 class="font-bold text-gray-800 mb-2">Ikuti Kami</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="bg-blue-600 text-white rounded-full h-10 w-10 flex items-center justify-center hover:bg-blue-700">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="bg-blue-400 text-white rounded-full h-10 w-10 flex items-center justify-center hover:bg-blue-500">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="bg-red-600 text-white rounded-full h-10 w-10 flex items-center justify-center hover:bg-red-700">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="#" class="bg-purple-600 text-white rounded-full h-10 w-10 flex items-center justify-center hover:bg-purple-700">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">Formulir Kontak</h3>
+                        <form>
+                            <div class="mb-4">
+                                <label for="name" class="block text-gray-700 font-medium mb-2">Nama Lengkap</label>
+                                <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
+                            </div>
+                            <div class="mb-4">
+                                <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
+                            </div>
+                            <div class="mb-4">
+                                <label for="phone" class="block text-gray-700 font-medium mb-2">Nomor Telepon</label>
+                                <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
+                            </div>
+                            <div class="mb-4">
+                                <label for="message" class="block text-gray-700 font-medium mb-2">Pesan</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-blue-600 text-white py-3 px-4 rounded-lg font-medium hover:bg-blue-700 transition duration-300">Kirim Pesan</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Maps Section -->
+    <div class="bg-white py-8">
+        <div class="container mx-auto px-6">
+            <h3 class="text-xl font-bold text-gray-800 mb-4">Lokasi Kami</h3>
+            <div class="h-96 rounded-xl overflow-hidden shadow-lg">
+                <iframe src="https://www.google.co.id/intl/id/about/products?tab=lh" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Pertanyaan Umum</h2>
+            <div class="space-y-4">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <button class="w-full text-left p-4 focus:outline-none">
+                        <div class="flex justify-between items-center">
+                            <h3 class="font-bold text-gray-800">Apa saja persyaratan untuk mendaftar nikah?</h3>
+                            <i class="fas fa-chevron-down text-blue-600 transform transition-transform duration-300"></i>
+                        </div>
+                    </button>
+                    <div class="p-4 pt-0 hidden">
+                        <p class="text-gray-700">Persyaratan meliputi: Fotokopi KTP, KK, Akta Kelahiran, Surat Keterangan Belum Menikah, Pas foto 3x4 (2 lembar), Fotokopi KTP wali nikah, serta dokumen-dokumen lain sesuai kondisi calon mempelai.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <button class="w-full text-left p-4 focus:outline-none">
+                        <div class="flex justify-between items-center">
+                            <h3 class="font-bold text-gray-800">Berapa lama proses pencatatan nikah sampai dapat buku nikah?</h3>
+                            <i class="fas fa-chevron-down text-blue-600 transform transition-transform duration-300"></i>
+                        </div>
+                    </button>
+                    <div class="p-4 pt-0 hidden">
+                        <p class="text-gray-700">Proses biasanya memakan waktu 1-3 hari kerja setelah semua persyaratan lengkap. Kecuali terdapat hal-hal khusus yang memerlukan verifikasi lebih lanjut.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <button class="w-full text-left p-4 focus:outline-none">
+                        <div class="flex justify-between items-center">
+                            <h3 class="font-bold text-gray-800">Bagaimana jika wali nikah tidak bisa hadir?</h3>
+                            <i class="fas fa-chevron-down text-blue-600 transform transition-transform duration-300"></i>
+                        </div>
+                    </button>
+                    <div class="p-4 pt-0 hidden">
+                        <p class="text-gray-700">Wali dapat memberikan taukil (kuasa) kepada orang lain dengan membawa surat kuasa yang sudah dilegalisasi oleh Pejabat yang berwenang dan melengkapi persyaratan administrasi yang ditentukan.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <button class="w-full text-left p-4 focus:outline-none">
+                        <div class="flex justify-between items-center">
+                            <h3 class="font-bold text-gray-800">Apakah bisa mengurus pernikahan untuk warga di luar Samarinda Utara?</h3>
+                            <i class="fas fa-chevron-down text-blue-600 transform transition-transform duration-300"></i>
+                        </div>
+                    </button>
+                    <div class="p-4 pt-0 hidden">
+                        <p class="text-gray-700">Ya, dengan syarat salah satu calon mempelai berdomisili di wilayah Samarinda Utara atau memiliki izin dispensasi nikah dari KUA asal.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/f8901436-0e7a-4d3a-b30d-8dcebeaa506f.png" alt="Logo KUA Samarinda Utara" class="h-20 mb-4">
+                    <p class="text-gray-400">Kantor Urusan Agama Kecamatan Samarinda Utara, Kementerian Agama Republik Indonesia</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Layanan</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Pendaftaran Nikah</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Rekomendasi Pindah Nikah</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Taukil Wali</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Ikrar Wakaf</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Rujuk</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Tautan Cepat</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Persyaratan Nikah</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Jadwal Pelayanan</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Formulir Download</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Konsultasi Keluarga</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Galeri Kegiatan</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Kantor KUA</h4>
+                    <address class="text-gray-400 not-italic">
+                        Jl. Pahlawan No. 123<br>
+                        Samarinda Utara<br>
+                        Kalimantan Timur 75117<br>
+                        Telp: 0541-1234567<br>
+                        Email: kua.samarindautara@kemenag.go.id
+                    </address>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>© 2023 KUA Samarinda Utara. Seluruh hak cipta dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <div class="floating-whatsapp">
+        <a href="https://wa.me/6281234567890" class="bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition duration-300 block">
+            <i class="fab fa-whatsapp text-2xl"></i>
+        </a>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.md\\:hidden button').addEventListener('click', function() {
+            const menu = document.querySelector('.md\\:flex.space-x-8');
+            menu.classList.toggle('hidden');
+        });
+
+        // FAQ accordion
+        document.querySelectorAll('#faq button').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('i');
+                
+                content.classList.toggle('hidden');
+                button.classList.toggle('active');
+                
+                if (content.classList.contains('hidden')) {
+                    icon.classList.remove('rotate-180');
+                } else {
+                    icon.classList.add('rotate-180');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
